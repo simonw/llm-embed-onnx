@@ -7,6 +7,8 @@
 
 Run embedding models using ONNX
 
+This LLM plugin is a wrapper around [onnx_embedding_models](https://github.com/taylorai/onnx_embedding_models) by Benjamin Anderson.
+
 ## Installation
 
 Install this plugin in the same environment as [LLM](https://llm.datasette.io/).
