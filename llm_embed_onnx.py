@@ -51,4 +51,4 @@ class OnnxModel(llm.EmbeddingModel):
         return self._model
 
     def embed_batch(self, texts):
-        return self.get_model().embed_batch(texts=texts)
+        return self.get_model().embed_batch(texts=list(texts))
