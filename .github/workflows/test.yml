@@ -23,13 +23,13 @@ jobs:
       run: |
         pip install -e '.[test]'
     - name: Cache models
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
-        path: ~/.cache/llm-user-path
+        path: llm-user-path
         key: ${{ runner.os }}-llm-user-path-
     - name: Run tests
       env:
-        LLM_USER_PATH: ~/.cache/llm-user-path
+        LLM_USER_PATH: llm-user-path
       run: |
         mkdir -p $LLM_USER_PATH
         pytest
