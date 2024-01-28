@@ -17,7 +17,32 @@ llm install llm-embed-onnx
 ```
 ## Usage
 
-Usage instructions go here.
+This plugin adds the following embedding models, which can be listed using `llm embed-models`:
+
+```
+onnx-bge-micro
+onnx-gte-tiny
+onnx-minilm-l6
+onnx-minilm-l12
+onnx-bge-small
+onnx-bge-base
+onnx-bge-large
+```
+
+You can run any of these models using `llm embed` command:
+
+```bash
+llm embed -m onnx-bge-micro -c "Example content"
+```
+This will output a 384 length JSON array of floating point numbers, starting:
+```
+[-0.03910085942622519, -0.0030843335461659795, 0.032797761260860724,
+```
+The first time you use any of these models the model will be downloaded to the `llm_embed_onnx` directory in your [LLM data directory](https://llm.datasette.io/en/stable/setup.html#setting-a-custom-directory-location). On macOS this defaults to:
+
+`~/Library/Application Support/io.datasette.llm/llm_embed_onnx`
+
+For more on how to use these embedding models see [the LLM embeddings documentation](https://llm.datasette.io/en/stable/embeddings/index.html).
 
 ## Development
 
