@@ -1,0 +1,27 @@
+[project]
+name = "llm-embed-onnx"
+version = "0.1"
+description = "Run embedding models using ONNX"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "llm",
+    "onnx_embedding_models"
+]
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/simonw/llm-embed-onnx"
+Changelog = "https://github.com/simonw/llm-embed-onnx/releases"
+Issues = "https://github.com/simonw/llm-embed-onnx/issues"
+CI = "https://github.com/simonw/llm-embed-onnx/actions"
+
+[project.entry-points.llm]
+embed_onnx = "llm_embed_onnx"
+
+[project.optional-dependencies]
+test = ["pytest"]
