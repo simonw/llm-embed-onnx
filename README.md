@@ -5,7 +5,7 @@
 [![Tests](https://github.com/simonw/llm-embed-onnx/actions/workflows/test.yml/badge.svg)](https://github.com/simonw/llm-embed-onnx/actions/workflows/test.yml)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/simonw/llm-embed-onnx/blob/main/LICENSE)
 
-Run embedding models using ONNX
+Run embedding models using the [ONNX Runtime](https://onnxruntime.ai)
 
 This LLM plugin is a wrapper around [onnx_embedding_models](https://github.com/taylorai/onnx_embedding_models) by Benjamin Anderson.
 
